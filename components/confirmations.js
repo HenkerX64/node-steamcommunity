@@ -23,7 +23,7 @@ SteamCommunity.prototype.getConfirmations = function(time, key, callback) {
 	}
 
 	// The official Steam app uses the tag 'list', but 'conf' still works so let's use that for backward compatibility.
-	request(this, 'getlist', key, time, tag, null, true, function(err, body) {
+	request(this, 'getlist', key, time, tag, {l: 'english'}, true, function(err, body) {
 		if (err) {
 			callback(err);
 			return;
