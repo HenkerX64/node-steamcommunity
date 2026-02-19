@@ -160,6 +160,7 @@ SteamCommunity.prototype._setCookie = function(cookie, secure) {
 		this._jar.setCookie(cookie.clone(), protocol + "://steamcommunity.com");
 		this._jar.setCookie(cookie.clone(), protocol + "://store.steampowered.com");
 		this._jar.setCookie(cookie.clone(), protocol + "://help.steampowered.com");
+		this._jar.setCookie(cookie.clone(), protocol + "://checkout.steampowered.com");
 	}
 };
 
